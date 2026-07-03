@@ -1,0 +1,15 @@
+[package]
+name = "cn_incremental"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+cn_types = { path = "../cn_types" }
+cn_config = { path = "../cn_config" }
+cn_lexer = { path = "../cn_lexer" }
+cn_parser = { path = "../cn_parser" }
+cn_mapper = { path = "../cn_mapper" }
+cn_codegen = { path = "../cn_codegen" }
+serde = { workspace = true }
+thiserror = { workspace = true }

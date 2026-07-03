@@ -1,0 +1,11 @@
+[package]
+name = "cn_parser"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+cn_types = { path = "../cn_types" }
+cn_config = { path = "../cn_config" }
+cn_lexer = { path = "../cn_lexer" }
+thiserror = { workspace = true }

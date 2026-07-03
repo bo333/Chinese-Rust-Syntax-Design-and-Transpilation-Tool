@@ -1,0 +1,23 @@
+[package]
+name = "cn_cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[[bin]]
+name = "cn_transpiler"
+path = "src/main.rs"
+
+[dependencies]
+cn_types = { path = "../cn_types" }
+cn_config = { path = "../cn_config" }
+cn_lexer = { path = "../cn_lexer" }
+cn_parser = { path = "../cn_parser" }
+cn_sugar = { path = "../cn_sugar" }
+cn_mapper = { path = "../cn_mapper" }
+cn_codegen = { path = "../cn_codegen" }
+cn_diag = { path = "../cn_diag" }
+cn_incremental = { path = "../cn_incremental" }
+cn_sandbox = { path = "../cn_sandbox" }
+cn_lsp = { path = "../cn_lsp" }
+anyhow = { workspace = true }

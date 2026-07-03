@@ -1,0 +1,31 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/cn_types",
+    "crates/cn_config",
+    "crates/cn_lexer",
+    "crates/cn_parser",
+    "crates/cn_sugar",
+    "crates/cn_mapper",
+    "crates/cn_codegen",
+    "crates/cn_diag",
+    "crates/cn_incremental",
+    "crates/cn_verify",
+    "crates/cn_migrator",
+    "crates/cn_sandbox",
+    "crates/cn_lsp",
+    "crates/cn_cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70.0"
+license = "MIT"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+toml = "0.8"
+thiserror = "1.0"
+anyhow = "1.0"
